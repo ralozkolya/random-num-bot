@@ -1,0 +1,11 @@
+{
+  "name": "random-bot",
+  "description": "Twitter bot, which tweets random number daily",
+  "repository": "https://github.com/ralozkolya/random-num-bot",
+  "author": "Nikoloz Razmadze",
+  "license": "GPL-3.0",
+  "version": "1.0.0",
+  "dependencies": {
+    "twitter": "^1.7.0"
+  }
+}
