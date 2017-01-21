@@ -2,8 +2,6 @@ var http = require('https');
 var Twitter = require('twitter');
 var env = process.env;
 
-var loopDelay = 86400000; // Milliseconds in 24h
-
 function check() {
 
     if(env.KEY
@@ -11,20 +9,11 @@ function check() {
         && env.TOKEN
         && env.TOKEN_SECRET
         && env.RANDOM_TOKEN) {
-        loop();
+        getRandomNumber(postToTwitter);
         return;
     }
 
     throw new Error('Parameters KEY, SECRET, TOKEN, TOKEN_SECRET and RANDOM_TOKEN are required');
-}
-
-function loop() {
-
-    setTimeout(loop, loopDelay);
-
-    getRandomNumber(function(number) {
-        postToTwitter(number);
-    });
 }
 
 function getRandomNumber(callback) {
