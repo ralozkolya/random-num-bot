@@ -19,7 +19,7 @@ function check() {
 function getRandomNumber(callback) {
     var options = {
         hostname: 'api.random.org',
-        path: '/json-rpc/1/invoke',
+        path: '/json-rpc/2/invoke',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
