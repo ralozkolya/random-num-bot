@@ -1,0 +1,3 @@
+DIR=~/node/random-num-bot/
+. $DIR/var.env
+/usr/bin/node $DIR/app.js
